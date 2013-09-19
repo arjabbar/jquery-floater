@@ -57,13 +57,13 @@
 		
 		var addTransition = function(elem) {
 			var currentTransitionProp = $(elem).css(prefix.css + 'transition');
-			if (currentTransitionProp.indexOf(settings.transitionProp) === -1)
+			if (currentTransitionProp.indexOf('top') === -1)
 				$(elem).css(prefix.css + 'transition', currentTransitionProp + ',' + transitionProp);	
 		}
 		
 		var removeTransition = function(elem) {
 			var currentTransitionProp = $(elem).css(prefix.css + 'transition');
-			if (currentTransitionProp.indexOf(settings.transitionProp) > -1)
+			if (currentTransitionProp.indexOf('top') > -1)
 				$(elem).css(prefix.css + 'transition', currentTransitionProp.split(transitionProp)[0].trim());			
 		}
 		
