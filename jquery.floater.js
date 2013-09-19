@@ -31,7 +31,7 @@
 		})();
 		// End of David Walsh code theft
 		
-		var alteredValues = ['position', 'top', 'display'];
+		var alteredValues = ['position', 'top'];
 		
 		var transitionProp = 'top ' + settings.transitionDuration + 'ms ' + settings.transitionTimingFunction;
 		
@@ -79,8 +79,7 @@
 					var newPosition = Math.max((window.scrollY - $dock.offset().top + settings.topMargin), 0);
 					addTransition($elem);
 					$elem.css({'position': 'relative',
-							'top': newPosition + 'px',
-							'display': 'block'});
+							'top': newPosition + 'px'});
 				} else {
 					restoreOriginalCss($elem, alteredValues);
 					removeTransition($elem);
