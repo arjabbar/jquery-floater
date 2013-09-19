@@ -25,11 +25,11 @@ and Bam Baby! Floating elements that scroll with the page!
 These are the available settings:
 
 
-+ <b>transitionDuration</b> <span style="color: grey;">//How long it takes for the element to fall into place (in ms)</span>
-+ <b>generatedClassName</b> <span style="color: grey;">//the class name that is generated for the element</span>
-+ <b>topMargin</b> <span style="color: grey;">//The margin that is between to top of the screen and the element</span>
-+ <b>transitionEnabled</b> <span style="color: grey;">//whether or not transitions are enabled</span>
-+ <b>transitionTimingFunction</b> <span style="color: grey;">//The timing function (css values such as 'ease-in' or 'linear')</span>
++ <b>transitionDuration</b> <span style="color: grey;">//How long it takes for the element to fall into place (int, in ms)</span>
++ <b>generatedClassName</b> <span style="color: grey;">//the class name that is generated for the element (string)</span>
++ <b>topMargin</b> <span style="color: grey;">//The margin that is between to top of the screen and the element (int)</span>
++ <b>transitionEnabled</b> <span style="color: grey;">//whether or not transitions are enabled (boolean)</span>
++ <b>transitionTimingFunction</b> <span style="color: grey;">//The timing function (string, css values such as 'ease-in' or 'linear')</span>
 
 In order to use them, pass it as an object into the `float` function like so:
 
