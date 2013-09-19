@@ -1,4 +1,4 @@
-// Float That Shit
+// JQuery Floater
 // A JQuery plugin written by Abdur Jabbar
 
 (function($){
